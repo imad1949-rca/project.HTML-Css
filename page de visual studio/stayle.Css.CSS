@@ -1,0 +1,139 @@
+:root{
+    --bossecolor: #ffffff;
+    --color2: #996BD1;
+    --color3: #3c009e;
+    --color4:#0fcec2;
+    --colorblack:black;
+    --padding:3%;
+    --fontsize:2rem;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+html{
+    font-family: 'Yeon Sung';
+    font-size: 16px;
+    color: var(--bossecolor);
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--colorblack);
+    display: flex;
+    flex-direction: column;
+}
+span{
+    color: var(--color4);
+}
+h2{
+    font-size: 2rem;
+    letter-spacing: 0.12rem;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+nav{
+    padding-top: 2rem;
+    padding-left: var(--padding);
+    padding: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li{
+   
+    list-style-type:none;
+    display: inline-block;
+    margin: 0.8rem 1.5rem;
+    font-size: var(--fontsize);
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--bossecolor);
+    transition: 0.4s;
+    
+}
+nav ul li a:hover{
+    color: var(--color4);
+
+}
+#button{
+    color: var(--bossecolor);
+    font-size: var(--fontsize);
+    text-decoration: none;
+    margin-right: 1rem;
+    transition: 0.4s;
+    border-radius: 30px;
+    padding: 0.81rem 1.87rem;
+    background-color: var(--color3);
+}
+#button:hover{
+    color: var(--color4);
+    background-color: transparent;
+    border: 2px solid var(--color3);
+}
+.content{
+    flex-grow: 1;
+    padding: 0 var(--padding);
+    display: flex;
+    align-items: center;
+}
+.texte{
+    position: relative;
+    bottom: 70px;
+    
+}
+h1{
+    font-size: 4.65rem;
+    margin: 1.5rem 0;
+}
+h4{
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    letter-spacing: 3px;
+    color: var(--color2);
+}
+h3{
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    letter-spacing: 3px;
+}
+.download{
+    color: var(--bossecolor);
+    font-size: var(--fontsize);
+    text-decoration: none;
+    margin-right: 1rem;
+    transition: 0.4s;
+    border-radius: 30px;
+    padding: 0.81rem 1.87rem;
+    background-color: var(--color3);
+    margin-left:16rem;
+}
+.download:hover{
+    color: var(--color4);
+    background-color: transparent;
+    border: 2px solid var(--color2);
+}
+
+.logo{
+    margin-top: 3.5rem;
+}
+.logo img{
+    margin-right: 2rem;
+    width: 2.5;
+    height: 4rem;
+    transition: 0.4s;
+}
+
+.logo img:hover{
+    transform: scale(1.2);
+}
+#img{
+    width: 250px;
+    visibility: hidden;
+    display: none;
+}
